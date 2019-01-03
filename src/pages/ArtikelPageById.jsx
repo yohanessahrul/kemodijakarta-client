@@ -3,7 +3,10 @@ import {
     Container,
     Row,
     Col,
+    Breadcrumb,
+    BreadcrumbItem,
   } from 'reactstrap';
+import { cleanDate } from '../helper/helper';
 
 import FixedButtonDaftarMobile from '../components/FixedButtonDaftarMobile';
 import Navigation from '../components/Navigation';
@@ -39,7 +42,6 @@ class ArtikelPageById extends Component {
   render() {
     const { slideSection } = this.props.lang.home;
     if (this.state.isLoading) {
-      console.log('Tipe judul ==> ', typeof this.state.currentArticle.judul)
       return (
         <div>
           <Helmet>
@@ -64,17 +66,25 @@ class ArtikelPageById extends Component {
           <Container style={{ paddingBottom: '100px' }}>
             <div className="marginTop"></div>
             <Row>
-              <Col>
-                <Container style={{ }}>
-                  
-                </Container>
+              <Col md="12">
               </Col>
             </Row>
             <Row>
               <Col md="8">
-                <h1>{this.state.currentArticle.judul}</h1>
-                <img src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
+                <Breadcrumb className="breadcrumbArticle" tag="nav" listTag="div">
+                  <BreadcrumbItem tag="a" href="/">Home</BreadcrumbItem>
+                  <BreadcrumbItem tag="a" href="/artikel">Article</BreadcrumbItem>
+                  <BreadcrumbItem active tag="span">{this.state.currentArticle.judul}</BreadcrumbItem>
+                </Breadcrumb>
+                <h2 className="headingArtikelById">{this.state.currentArticle.judul}</h2>
+                <p className="dateArtikelById">{cleanDate(this.state.currentArticle.createdDate)}</p>
+                <img className="imageArtikelById" src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
                 <div dangerouslySetInnerHTML={{ __html: this.state.currentArticle.isi }}></div>
+              </Col>
+              <Col md="4">
+                <div style={{ width: '100%', height: '900px', background: '#e2e2e2' }}>
+                  <h3>ADS</h3>
+                </div>
               </Col>
             </Row>
           </Container>
