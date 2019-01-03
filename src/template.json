@@ -1,0 +1,212 @@
+{ 
+  "id": {
+    "menu": {
+      "daftar": "DAFTAR",
+      "beranda": "BERANDA",
+      "tentang":"TENTANG",
+      "kalkulator": "KALKULATOR MEDIS",
+      "kontak": "KONTAK"
+    },
+    "home": {
+      "slideSection": {
+        "h1": "Percayakan perjalanan medis anda pada kami",
+        "h3": "Kemodijakarta.com adalah sebuah layanan perjalanan medis yang di lahirkan untuk mendampingi pasien kanker dari luar Jakarta ketika berkunjung ke Pusat Layanan Kanker di Jakarta dan sekitarnya",
+        "daftarLayanan": "Daftar Layanan",
+        "listLayanan2": [
+          {
+            "id": "akomodasi",
+            "h1": "Akomodasi & Transportasi",
+            "desc": "Kami dapat merekomendasikan tempat tinggal, dan membookingan alat transportasi selama anda melakukan perjalanan medis"
+          },
+          {
+            "id": "perawat",
+            "h1": "Perawat Home Care & ALKES",
+            "desc": "Kami membantu anda dengan perawat yang dapat merawat anda setiap harinya, dan ketersediaan alat-alat kesehatan jika dibutuhkan."
+          },
+          {
+            "id": "konsumsi",
+            "h1": "Konsumsi",
+            "desc": "Selama pengobatan kami akan memperhatikan apa yang menjadi konsumsi anda sehari-hari."
+          },
+          {
+            "id": "edukasi",
+            "h1": "Edukasi & Konseling",
+            "desc": "Kami akan menghadirkan layanan konseling pribadi"
+          },
+          {
+            "id": "hiburan",
+            "h1": "Hiburan & Lain-lain",
+            "desc": "Kami akan memfasilitasi anda dengan sarana hiburan"
+          }
+        ],
+        "btnlayanan": "Lihat Layanan",
+        "btnDaftarMobile": "DAFTAR"
+      },
+      "kalkulatorSection": {
+        "h1": "Hitung perjalanan medis anda",
+        "h3": "Kami menyediakan kalkulator medis bagi anda yang ingin memulai perjalanan medis anda, hasil dari kalkulator medis merupakan gambaran pengeluaran yang akan anda jalani selama perjalanan medis di Jakarta.",
+        "button": "Kalkulator Medis"
+      },
+      "komik": [
+        "1.jpeg", "2.jpeg", "3.jpeg"
+      ],
+      "testimoniSection": [
+        {
+          "nama": "Siti Komariah",
+          "testimoni": "Saya menderita kanker stadium lanjut, dan mendapatkan kemudahan informasi berobat disini.."
+        },
+        {
+          "nama": "Markonah Beri",
+          "testimoni": "Saya merasa putus asa saat divonis kanker, namun semenjak mengenal kemodijakarta beban saya berkurang."
+        },
+        {
+          "nama": "Roberto Portnoy",
+          "testimoni": "Kemodijakarta benar-benar memberikan apa yang saya inginkan sebagai penderita kanker"
+        },
+        {
+          "nama": "Naruto Uzumaki",
+          "testimoni": "2 tahun lalu saya pernah menggunakan jasa kemodijakarta, saya merasa senang sebagai penderita kanker.."
+        }
+      ],
+      "kerjasama": {
+        "h3": "Jaringan Kerjasama",
+        "h5": "Kami bekerja sama dengan berbagai perusahaan untuk menciptakan peluang bersama dalam mengedepankan produk dengan hasil yang berkualitas."
+      }
+    },
+    "about": {
+      "tentang": {
+        "h2": "Tentang Kami",
+        "desc": "Kemodijakarta.com adalah sebuah layanan pendampingan perjalanan medis yang di lahirkan untuk pasien dari daerah ketika berkunjung ke Pusat Layanan Kesehatan di Jakarta. Kemodijakarta.com mengunakan pendekatan teknologi dan manusia untuk dapat memberikan pelayanan optimal kepada pasien sebelum dan selama berobat di Jakarta."
+      },
+      "tim": {
+        "h2": "Tim Kami",
+        "ruben": "Pemilik Klinik Taman Anggrek",
+        "vincent": "Kepala Pelayanan di Rumah Sakit Khusus Kanker",
+        "ricky": "Manager",
+        "sigit": "Trip Planner",
+        "lisa": "Konsultan Perjalanan Medis",
+        "nisa": "Resepsionis",
+        "ali": "Akunting",
+        "carolina": "Legal & SDM",
+        "jefry": "Web Development"
+      }
+    },
+    "contact": {
+      "form": {
+        "h1": "Hubungi Kami",
+        "nama": "Nama",
+        "email": "Email",
+        "pesan": "Pesan",
+        "kirim": "Kirim"
+      },
+      "kontak": {
+        "h1": "Informasi lebih lanjut :"
+      }
+    }
+  },
+  "en": {
+    "menu": {
+      "daftar": "REGISTER",
+      "beranda": "HOME",
+      "tentang":"ABOUT",
+      "kalkulator": "MEDICAL CALCULATOR",
+      "kontak": "CONTACT"
+    },
+    "home": {
+        "slideSection": {
+          "h1": "Trust your medical trip with us",
+          "h3": "Kemodijakarta.com is a medical travel service that was born to accompany cancer patients from outside Jakarta when visiting the Cancer Service Center in Jakarta and surrounding areas",
+          "daftarLayanan": "Service list",
+          "listLayanan2": [
+            {
+              "id": "akomodasi",
+              "h1": "Accommodation & Transportation",
+              "desc": "We can recommend a place to stay, and place a transport for you as long as you make a medical trip"
+            },
+            {
+              "id": "perawat",
+              "h1": "Homecare Nurse & Medical devices",
+              "desc": "We help you with nurses who can take care of you every day, and the availability of medical equipment if needed."
+            },
+            {
+              "id": "konsumsi",
+              "h1": "Consumption",
+              "desc": "During treatment we will pay attention to what you consume everyday."
+            },
+            {
+              "id": "edukasi",
+              "h1": "Education & Counseling",
+              "desc": "We will present personal counseling services"
+            },
+            {
+              "id": "hiburan",
+              "h1": "Entertainment and others",
+              "desc": "We will facilitate you with entertainment facilities"
+            }
+          ],
+          "btnlayanan": "See Services",
+          "btnDaftarMobile": "REGISTER"
+        },
+        "kalkulatorSection": {
+          "h1": "Calculate your medical trip",
+          "h3": "We provide medical calculators for those of you who want to start your medical journey, the results of a medical calculator are an overview of the expenses that you will live during a medical trip in Jakarta.",
+          "button": "Medical Calculator"
+        },
+        "komik": [
+          "1-en.jpeg", "2-en.jpeg", "3-en.jpeg"
+        ],
+        "testimoniSection": [
+          {
+            "nama": "Siti Komariah",
+            "testimoni": "I suffer from advanced cancer, and get ease of information on treatment here.."
+          },
+          {
+            "nama": "Markonah Beri",
+            "testimoni": "I felt hopeless when I was sentenced to cancer, but since I knew kemodijakarta my burden was reduced."
+          },
+          {
+            "nama": "Roberto Portnoy",
+            "testimoni": "Kemodijakarta really gives what I want as a cancer sufferer."
+          },
+          {
+            "nama": "Naruto Uzumaki",
+            "testimoni": "2 years ago I have used Kemodijakarta services, I feel happy as a cancer patient.."
+          }
+        ],
+        "kerjasama": {
+          "h3": "Our Network",
+          "h5": "We work with various companies to create shared opportunities in promoting products with quality results."
+        }
+    },
+    "about": {
+      "tentang": {
+        "h2": "About Us",
+        "desc": "Kemodijakarta.com is a medical travel assistance service that is born to serve patients from the region when visiting a Health Service Center in Jakarta. Kemodijakarta.com uses technology and human approaches to be able to provide optimal services to patients before and during treatment in Jakarta."
+      },
+      "tim": {
+        "h2": "Our Team",
+        "ruben": "The owner of the Taman Anggrek Clinic",
+        "vincent": "Head of Service at the Cancer Special Hospital",
+        "ricky": "Manager",
+        "sigit": "Trip Planner",
+        "lisa": "Medical Travel Consultant",
+        "nisa": "Receptionist",
+        "ali": "Accounting",
+        "carolina": "Legal & HR",
+        "jefry": "Web Development"
+      }
+    },
+    "contact": {
+      "form": {
+        "h1": "Contact us",
+        "nama": "Name",
+        "email": "Email",
+        "pesan": "Message",
+        "kirim": "Send"
+      },
+      "kontak": {
+        "h1": "Information :"
+      }
+    }
+  }
+}

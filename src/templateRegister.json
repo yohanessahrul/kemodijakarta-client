@@ -1,0 +1,184 @@
+{
+  "id": {
+    "register": {
+      "step1": {
+        "namaDepan": {
+          "field": "Nama Depan",
+          "placeholder": "Nama Depan",
+          "notif1": "Notif nama depan 1",
+          "notif2": "Notif nama depan 2"
+        },
+        "namaBelakang": {
+          "field": "Nama Belakang",
+          "placeholder": "Nama Belakang",
+          "notif1": "Notif nama belakang 1",
+          "notif2": "Notif nama belakang 2"
+        },
+        "agama": {
+          "field": "Agama",
+          "placeholder": "Pilih Agama",
+          "notif1": "Notif Agama 1",
+          "notif2": "Notif Agama 2"
+        },
+        "aliran": {
+          "field": "Aliran",
+          "placeholder": "Aliran",
+          "notif1": "Notif Aliran 1",
+          "notif2": "Notif Aliran 2"
+        },
+        "tglLahir": {
+          "field": "Tanggal Lahir",
+          "notif1": "Notif Tanggal Lahir 1",
+          "notif2": "Notif Tanggal Lahir 2"
+        },
+        "jenisKelamin": {
+          "field": "Tanggal Lahir",
+          "notif1": "Notif Tanggal Lahir 1",
+          "notif2": "Notif Tanggal Lahir 2"
+        },
+        "email": {
+          "field": "Email",
+          "placeholder": "Email",
+          "notif1": "Notif Email 1",
+          "notif2": "Notif Email 2"
+        },
+        "alamat": {
+          "field": "Alamat",
+          "placeholder1": "Nama jalan dan nomor",
+          "placeholder2": "Kota dan provinsi",
+          "notif1": "Notif Tanggal Lahir 1",
+          "notif2": "Notif Tanggal Lahir 2"
+        },
+        "telp": {
+          "field": "Nomor Telepon/Hp",
+          "placeholder": "Nomor Telepon/Hp",
+          "notif1": "Notif Nomor Telepon/Hp 1",
+          "notif2": "Notif Nomor Telepon/Hp 2"
+        },
+        "asuransi": {
+          "field": "Asuransi yang anda miliki",
+          "placeholder": "Asuransi yang anda miliki",
+          "notif1": "Notif Asuransi 1",
+          "notif2": "Notif Asuransi 2"
+        },
+        "kontakDarurat": {
+          "field": "Nama Kontak Darurat",
+          "placeholder": "Nama Kontak Darurat",
+          "notif1": "Notif Kontak Darurat 1",
+          "notif2": "Notif Kontak Darurat 2"
+        },
+        "hubunganKerabat": {
+          "field": "Hubungan Kerabat",
+          "placeholder": "Hubungan Kerabat",
+          "notif1": "Notif Hubungan Kerabat 1",
+          "notif2": "Notif Hubungan Kerabat 2"
+        },
+        "telpHp": {
+          "field": "Nomor Telepon/Hp Darurat",
+          "placeholder": "Nomor Telepon/Hp Darurat",
+          "notif1": "Notif Nomor Telepon/Hp Darurat 1",
+          "notif2": "Notif Nomor Telepon/Hp Darurat 2"
+        }
+      },
+      "step2": {
+        "jenisKanker": {
+          "field": "Jenis Kanker",
+          "placeholder": "Jenis Kanker",
+          "notif1": "Notif Jenis Kanker 1",
+          "notif2": "Notif Jenis Kanker 2"
+        }
+      }
+    }
+  },
+  "en": {
+    "register": {
+      "step1": {
+        "namaDepan": {
+          "field": "First Name",
+          "placeholder": "First Name",
+          "notif1": "Notif First Name 1",
+          "notif2": "Notif First Name 2"
+        },
+        "namaBelakang": {
+          "field": "Last Name",
+          "placeholder": "Last Name",
+          "notif1": "Notif Last Name 1",
+          "notif2": "Notif Last Name 2"
+        },
+        "agama": {
+          "field": "Religion",
+          "placeholder": "Pilih Religion",
+          "notif1": "Notif Religion 1",
+          "notif2": "Notif Religion 2"
+        },
+        "aliran": {
+          "field": "religious stream",
+          "placeholder": "religious stream",
+          "notif1": "Notif religious stream 1",
+          "notif2": "Notif religious stream 2"
+        },
+        "tglLahir": {
+          "field": "Date of birth",
+          "notif1": "Notif Date of birth 1",
+          "notif2": "Notif Date of birth 2"
+        },
+        "jenisKelamin": {
+          "field": "Gender",
+          "notif1": "Notif Gender 1",
+          "notif2": "Notif Gender 2"
+        },
+        "email": {
+          "field": "Email",
+          "placeholder": "Email",
+          "notif1": "Notif Email 1",
+          "notif2": "Notif Email 2"
+        },
+        "alamat": {
+          "field": "Address",
+          "placeholder1": "Street names and numbers",
+          "placeholder2": "City and province",
+          "notif1": "Notif Address 1",
+          "notif2": "Notif Address 2"
+        },
+        "telp": {
+          "field": "Phone Number/Mobile",
+          "placeholder": "Phone Number/Mobile",
+          "notif1": "Notif Phone Number/Mobile 1",
+          "notif2": "Notif Phone Number/Mobile 2"
+        },
+        "asuransi": {
+          "field": "Insurance owned",
+          "placeholder": "Insurance owned",
+          "notif1": "Notif Insurance owned 1",
+          "notif2": "Notif Insurance owned 2"
+        },
+        "kontakDarurat": {
+          "field": "Name of emergency contact",
+          "placeholder": "Name of emergency contact",
+          "notif1": "Notif Kontak Darurat 1",
+          "notif2": "Notif Kontak Darurat 2"
+        },
+        "hubunganKerabat": {
+          "field": "Relationship to contacts",
+          "placeholder": "Relationship to contacts",
+          "notif1": "Notif Relationship to contacts 1",
+          "notif2": "Notif Relationship to contacts 2"
+        },
+        "telpHp": {
+          "field": "Nomor Telepon/Hp Darurat",
+          "placeholder": "Nomor Telepon/Hp Darurat",
+          "notif1": "Notif Nomor Telepon/Hp Darurat 1",
+          "notif2": "Notif Nomor Telepon/Hp Darurat 2"
+        }
+      },
+      "step2": {
+        "jenisKanker": {
+            "field": "Jenis Kanker",
+            "placeholder": "Jenis Kanker",
+            "notif1": "Notif Jenis Kanker 1",
+            "notif2": "Notif Jenis Kanker 2"
+          }
+      }
+    }
+  }
+}
