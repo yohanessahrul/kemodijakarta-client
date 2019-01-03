@@ -1,14 +1,1060 @@
+/* ubah default bootstrap */
+a.nav-link {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(67, 66, 66) !important;
+}
+.clear {
+  clear: both;
+}
+/* ::-webkit-scrollbar { 
+  display: none; 
+} */
+nav.navbar.navbar-expand-md.navbar-light.bg-white {
+  padding: 17px;
+  /* background: red !important; */
+  -webkit-box-shadow: 0px 3px 10px #0000001a !important;
+  box-shadow: 0px 3px 10px #0000001a !important;
+}
+li.nav-item > a {
+  color: #477086 !important;
+  padding: 10px!important;
+  text-decoration: none;
+}
+li.daftarButton.nav-item > a {
+  color: white !important;
+}
+ul.ml-auto.navbar-nav {
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(177, 23, 23) !important;
+  font-size: 14px;
+}
+.pad10 {
+  padding: 40px;
+}
+
+/* NAVBAR ==== NAVBAR ==== NAVBAR */
+.logoWrap {
+  width: 100px;
+  height: 10px;
+  padding: none !important;
+  margin: none !important;
+  /* background: red; */
+  position: relative;
+}
+.logo {
+  position: absolute;
+  height: 37px;
+  top: -15px;
+}
+
+.marginTop {
+  width: 100%;
+  /* height: 70px; */
+  height: 90px;
+  /* background: red; */
+}
+
+
+.fullnames {
+  width: 100%;
+}
+.fullnames > ul { margin:  0; padding:  0;}
+.fullnames > ul > li {
+  width: 48%;
+  float: left;
+  list-style: none;
+}
+.fullnames > ul > li:first-child {
+  margin-right: 4%;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+.scroll-container {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  /* height: 100vh; */
+  overflow-y: scroll;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+  /* background: red; */
+  margin-bottom: 10px;
+}
+.bigWrap {
+  width: 100%;
+  height: 100%;
+  /* background: gray; */
+}
+.headerWrap {
+  width: 100%;
+  height: 10%;
+  /* background: orangered; */
+  z-index: 100;
+  position: fixed;
+  /* box-shadow: 0px 1px 5px #888888; */
+}
+.mainWrap {
+  width: 100%;
+  height: 100%;
+  /* background: yellow; */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.roleAdminStyle {
+  background: red;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* hide scrollbar in chrome */
+.scroll-container::-webkit-scrollbar { width: 0 !important }
+.section {
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: center; */
+  /* height: 100%; */
+  /* font-size: 5em; */
+  /* background: yellow; */
+  /* border-bottom: 3px solid rgb(62, 33, 247); */
+  /* padding: 80px 0; */
+}
+.menu > ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.menu > ul > li {
+  width: 100%;
+  float: left;
+  list-style: none;
+  display: block;
+}
+.aboutLogo {
+  display: table;
+  width: 80%;
+  margin: 20px auto;
+}
+.service-thumb {
+  width: 100%;
+  margin-top: 20px;
+}
+.colService {
+  width: 100%;
+  margin-top: 10px;
+  /* background: pink; */
+}
+.colService > img {
+  display: table;
+  margin: 0 auto;
+  width: 170px;
+}
+.colService > img:hover {
+  width: 200px;
+  margin-top: -20px;
+  -webkit-transition: width 0.1s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.1s;
+  margin-bottom: -10px;
+}
+.colService > h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.colService > p {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 25px;
+  color: rgb(194, 210, 223);
+  /* background: yellow; */
+}
+.gradientShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  /* background: #01528f; */
+  opacity: 0.8;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0160bf+0,003284+100 */
+  background: rgb(1,96,191); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(1,96,191,1) 0%, rgba(0,50,132,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(1,96,191,1) 0%,rgba(0,50,132,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(1,96,191,1) 0%,rgba(0,50,132,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0160bf', endColorstr='#003284',GradientType=0 ); /* IE6-9 */
+}
+.intro {
+  width: 80%;
+  /* height: 300px; */
+  /* background: red; */
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+.intro > h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  /* text-align: center; */
+  font-size: 50px;
+  text-shadow: 3px 3px 5px #0000006d;
+  /* width: 600px; */
+}
+.intro > p {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 25px;
+  /* width: 500px; */
+  text-shadow: 2px 2px 5px #00000006;
+}
+.linkForm {
+  letter-spacing: 1px;
+  width: 150px;
+  background: rgb(18, 232, 221);
+  color: white !important;
+}
+#home {
+  width: 100%;
+  height: 500px;
+  background: red;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  overflow: hidden;
+}
+#home > img {
+  /* margin-left: -120px; */
+  width: 110%;
+  height: 100%;
+  display: block;
+}
+.kalkulatorIntro {
+  width: 100%;
+  /* height: 300px; */
+  /* background: red; */
+}
+.floatLogin {
+  position: absolute;
+  /* display: table; */
+  width: 400px;
+  /* height: 400px; */
+  top: 50px;
+  left: 80px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px #0000001a;
+}
+.about, .blog, .galery, .contact, .service {
+  background: white;
+  padding: 80px 0;
+  /* height: 700px; */
+}
+.aboutWrap > p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #545151;
+}
+.aboutWrap > h2 {
+  /* border-top: thin solid #ececec; */
+  padding-top: 30px;
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+  color: #444343;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+.teamMember {
+  width: 100%;
+  /* height: 250px; */
+  /* background: red; */
+  margin-bottom: 10px;
+}
+.teamMember > img {
+  width: 100%;
+}
+.teamMember > h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.teamMember > p {
+  font-size: 12px;
+  text-align: center;
+}
+.avatarStruktur {
+  width: 100%;
+  height: 130px;
+  background: green;
+  margin-bottom: 10px;
+}
+.titleContent, .descContent {
+  text-align: center !important;
+}
+.service {
+  background: #58A2E4;
+  color: white;
+}
+.contact { /* sementara */
+  height: 570px;
+  background: #F7F7F7;
+}
+.blogWrap {
+  width: 100% !important;
+  height: 400px;
+  background: red;
+}
+
+.thumb-img {
+  /* display: inline-table; */
+  width: 100%;
+  height: 300px;
+  background: red;
+}
+.hidden {
+  display: none;
+}
+
+.inputType {
+  display: table;
+  /* margin-top: 30px; */
+}
+input[type="text"], input[type="email"] {
+  /* height: 100px; */
+  background: white!important;
+}
+.teamList > ul {
+  padding: 0;
+  margin: 0 20px;
+}
+.teamList > ul > li {
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(55, 54, 54);
+}
+.teamList > ul > li > span {
+  color: gray;
+}
+a.daftarbtn.nav-link {
+  color: white !important;
+}
+.wrapContact {
+  height: 100%;
+  /* background: red; */
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.tabsWrap {
+  width: 100%;
+  /* height: 150px; */
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+.tabsWrap > ul {
+  padding: 0;
+  margin: 0;
+}
+.tabsWrap > ul > li {
+  padding: 0px 15px;
+  list-style: none;
+  float: left;
+  font-size: 10px;
+  background: yellow;
+  order: 2;
+}
+
+.floatLogin {
+  width: 500px;
+  border-radius: 0px 0px 5px 5px !important;
+  top: 55px;
+  background: #38a6ec;
+  position: absolute;
+  /* right: -10px; */
+  left: 54%;
+  padding: 10px 10px 0px 10px;
+}
+
+.floatLogin > ul {
+  margin: 10px;
+  padding: 0;
+}
+.floatLogin > ul > li {
+  list-style: none;
+  width: 180px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+}
+.floatLogin > ul > li > input {
+  width: 150px;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+}
+.floatLogin > p {
+  color: white;
+}
+
+.floatLogin > p > b {
+  color: white;
+  margin-left: 3px;
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.floatLogin > p > b:hover {
+  background: #098fd6;
+  cursor: pointer;
+}
+.iconFormLoginFloat {
+  width: 30px;
+  height: 100%;
+  background: #0a83c3;
+  float: left;
+  padding: 5px;
+  color: #86d6ff;
+}
+
+.submitFormLoginFloat {
+  border: none;
+  background: #045682;
+  padding: 4px 10px;
+  color: white;
+}
+
+#wh-widget-send-button.wh-widget-right {
+  right: 10px;
+}
+
+.subHeaderTop {
+  width: 100%;
+  background: #dfedf4;
+  margin-bottom: -16px;
+  padding: 0;
+}
+.subHeaderTop > ul > li {
+  padding: 3px 10px;
+  display: table;
+}
+.subHeaderTop > ul > li:hover {
+  background: #cce0ea;
+  cursor: pointer;
+}
+
+/*
+=========================================================================
+=========================================================================
+===== EXTRA-SMALL  D E V I C E ==========================================
+=========================================================================
+===== Extra small devices (phones, 600px and down) ======================
+=========================================================================
+=========================================================================
+*/
+@media only screen and (max-width: 600px) {
+  .daftarFloat {
+    width: 100%;
+    height: 50px;
+    background: #3dc9f9;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+    text-align: center;
+  }
+  .daftarFloat > a {
+    display: inline-block !important;
+    color: white;
+    padding: 15px;
+
+  }
+  li.nav-item {
+    color: #477086 !important;
+    padding: 10px!important;
+    text-decoration: none;
+  }
+  #home {
+    height: 600px;
+  }
+  .daftarButton {
+    display: none;
+  }
+  .intro {
+    width: 80%;
+    top: 110px;
+    left: 30px;
+  }
+  .intro > h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .intro > p {
+    font-size: 16px;
+  }
+  .linkForm {
+    width: 120px;
+    font-size: 12px;
+  }
+  .home {
+    padding-top: 50px;
+  }
+  #home {
+    margin-top: 0px;
+  }
+  #home > img {
+    height: 600px;
+    width: 320%;
+    margin-left: -650px;
+    height: 100%;
+    /* display: block; */
+  }
+  .scroll-container {
+    width: 100%;
+    /* height: 800px; */
+    /* padding-top: 55px; */
+  }
+  .mainWrap {
+    /* padding-top: 10%; */
+    width: 100%;
+    height: 100%;
+    /* background: yellow; */
+  }
+  .navbar-light .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255)!important;
+  }
+  ul.ml-auto.navbar-nav {
+    padding-top: 20px;
+  }
+  li.nav-item {
+    border-bottom: thin solid rgb(233, 233, 233)!important;
+  }
+  li.nav-item:last-child {
+    border-bottom: thin solid rgb(255, 255, 255)!important;
+  }
+  /* .thumbnailLayanan {
+    width: 100%;
+    margin-top: 20px;
+    background: red;
+  }
+  .thumbnailLayanan > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .thumbnailLayanan > ul > li {
+    list-style: none;
+    float: left;
+    margin: 10px 8px;
+    height: 120px;
+  }
+  .thumbnailLayanan > ul > li > p {
+    width: 90px;
+    text-ali5n: center;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+  } */
+  .thumbnailLayanan {
+    display: none;
+  }
+  .imageLayananWrap {
+    overflow: hidden;
+    width: 90px;
+    height: 50px;
+    background: rgb(248, 255, 255);
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+  }
+  .imageLayananWrap > img {
+    width: 160%;
+  }
+} 
+
+.footer > ul {
+  margin: 0;
+  padding: 10px 0px;
+}
+.footerAddress  {
+  float: left;
+}
+.footerAddressIcon {
+  color: white;
+}
+.footerAddress > p {
+  font-size: 13px !important;
+  line-height: 16px;
+  color: #bcd1de;
+  display: table;
+  padding-bottom: -10px;
+}
+
+/*
+=========================================================================
+=========================================================================
+===== S M A L L   D E V I C E ===========================================
+=========================================================================
+===== Small devices (portrait tablets and large phones, 600px and up) ===
+=========================================================================
+=========================================================================
+*/
+@media only screen and (min-width: 600px) {
+  .daftarButton {
+    margin-right: 10px;
+  }
+  /* .thumbnailLayanan {
+    display: block;
+  } */
+} 
+
+
+
+/*
+=========================================================================
+=========================================================================
+===== M E D I U M   D E V I C E =========================================
+=========================================================================
+===== Medium devices (landscape tablets, 768px and up) ==================
+=========================================================================
+=========================================================================
+*/
+@media only screen and (min-width: 768px) {
+  #home {
+    height: 450px;
+  }
+  .intro {
+    width: 80%;
+    top: 70px;
+    left: 50px;
+  }
+  .intro > h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .intro > p {
+    font-size: 16px;
+  }
+  .aboutLogo {
+    margin-top: 40px;
+  }
+  .descContent {
+    font-size: 14px;
+    padding: 0% 5%;
+    color: #bddde4;
+  }
+  .colService > h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .colService > p {
+    font-size: 14px;
+    color: #aaccd4;
+  }
+  .colService > img {
+    width: 120px;
+  }
+  .colService > img:hover {
+    width: 140px;
+  }
+/* 
+  .thumbnailLayanan {
+    display: none;
+  } */
+
+  .thumbnailLayanan {
+    width: 100%;
+    height: 190px;
+    margin-top: 20px;
+  }
+  .thumbnailLayanan > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .thumbnailLayanan > ul > li {
+    list-style: none;
+    float: left;
+    margin: 10px 8px;
+  }
+  .thumbnailLayanan > ul > li > p {
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .imageLayananWrap {
+    overflow: hidden;
+    width: 100px;
+    height: 70px;
+    background: rgb(248, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+  }
+  .imageLayananWrap > img {
+    width: 160%;
+  }
+  .btnLayananMobile {
+    display: none;
+  }
+}
+
+
+/*
+=========================================================================
+=========================================================================
+===== L A R G E   D E V I C E ===========================================
+=========================================================================
+===== Large devices (laptops/desktops, 992px and up) ====================
+=========================================================================
+=========================================================================
+*/
+@media only screen and (min-width: 992px) {
+  #home {
+    height: 400px;
+  }
+  .aboutLogo {
+    margin-top: 120px;
+  }
+  .descContent {
+    font-size: 14px;
+    padding: 0% 5%;
+    color: #bddde4;
+  }
+  .colService > h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .colService > p {
+    font-size: 14px;
+    color: #aaccd4;
+  }
+  .colService > img {
+    width: 150px;
+  }
+  .colService > img:hover {
+    width: 180px;
+  }
+
+  .thumbnailLayanan {
+    width: 100%;
+    height: 190px;
+    margin-top: 20px;
+  }
+  .thumbnailLayanan > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .thumbnailLayanan > ul > li {
+    list-style: none;
+    float: left;
+    margin: 10px 8px;
+  }
+  .thumbnailLayanan > ul > li > p {
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .imageLayananWrap {
+    overflow: hidden;
+    width: 130px;
+    height: 100px;
+    background: rgb(248, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+  }
+  .imageLayananWrap > img {
+    width: 160%;
+  }
+  .layanan1 {
+    margin-top: -20px;
+  }
+  .btnLayananMobile {
+    display: none;
+  }
+} 
+
+/*
+=========================================================================
+=========================================================================
+===== EXTRA-LARGE  D E V I C E ==========================================
+=========================================================================
+===== Extra large devices (large laptops and desktops, 1200px and up) ===
+=========================================================================
+=========================================================================
+*/
+@media only screen and (min-width: 1200px) {
+  #home {
+    height: 628px;
+  }
+  .intro {
+    top: 150px;
+    left: 100px;
+    /* background: red; */
+  }
+  .intro > h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: none;
+  }
+  .intro > p {
+    font-size: 20px;
+  }
+  /* .thumbnailLayanan  {
+    display: none;
+  } */
+  .thumbnailLayanan {
+    width: 100%;
+    height: 190px;
+    margin-top: 50px;
+  }
+  .thumbnailLayanan > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .thumbnailLayanan > ul > li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+  }
+  .thumbnailLayanan > ul > li:hover > img {
+    -webkit-filter: contrast(70%); 
+    filter: contrast(70%);
+  }
+  .thumbnailLayanan > ul > li > p {
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .imageLayananWrap {
+    overflow: hidden;
+    width: 150px;
+    height: 120px;
+    background: rgb(248, 255, 255);
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.282);
+  }
+  .imageLayananWrap > img {
+    width: 160%;
+  }
+  .layanan1 {
+    margin-top: -20px;
+  }
+  .btnLayananMobile {
+    display: none;
+  }
+}
+
+/* alang */
+.wizardForm{
+  /* background: green; */
+}
+
+
+.fieldForm{
+  /* background: pink; */
+  margin:10px 10px 0px 10px !important;
+}
+
+input[type="text"], input[type="email"],input[type="password"]{
+  width:100%;
+}
+
+.formContainer{ 
+  background: 'red';
+  width:'500px';
+  margin:'0 auto' 
+  }
+
+  
+  .spasiButton{
+    margin:50px 10px 0px 10px
+  }
+
+  .errorStyle{
+    font-weight: bold;
+    color: red !important
+  }
+
+  Table{
+    font-size: 15px;
+  }
+  tbody > tr > td{
+    width:50px !important;
+  }
+
+  .galleriesCollapseForm {
+    width: 100%;
+    background: red;
+    padding: 16px;
+    margin-top: 10px;
+  }
+  
+  .galleriesCollapseForm > ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .galleriesCollapseForm > ul > li {
+    list-style: none;
+    float: left;
+    width: 160px;
+    height: 100px;
+    background: yellow;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+
+  .galleriesCollapseForm > ul > li > img {
+    width: 110%;
+  }
+
+
+.demo-editor {
+  border: thin solid #bebebe;
+  background: #f1f8fd!important;
+  padding: 0px 10px;
+  height: 300px !important;
+}
+.rdw-editor-toolbar {
+  background: #549da9!important;
+  margin-bottom: -1px!important;
+  border: thin solid #8f8f8f!important;
+}
+
+.modalGalleryList {
+  width: 100%;
+  /* background: rgb(216, 213, 213); */
+}
+
+.modalGalleryList > ul {
+  margin: 0;
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+.modalGalleryList > ul > li {
+  list-style: none;
+  width: 90px;
+  height: 60px;
+  background: yellow;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.modalGalleryList > ul > li > img {
+  width: 120%;
+  margin-left: -10%;
+}
+.sidebarMenu {
+  display: block;
+  background: #065461;
+  padding: 0;
+  /* margin: 0; */
+  margin-top: 10px !important
+}
+.sidebarMenu > li {
+  list-style: none;
+  border-bottom: thin solid #1c93a8!important;
+}
+
+.sidebarMenu > li:hover {
+  background: #023942;
+}
+
+.sidebarMenu > li > a {
+  width: 100%;
+  display: table;
+  padding: 10px !important;
+  color: white;
+  text-decoration: none;
+}
+
+.activeSidebarMenu {
+  background: #023942;
+}
+.card {
+  -webkit-box-shadow: 0 0 10px 1px #EDEDED;
+  box-shadow: 0 0 10px 1px #EDEDED;
+}
+.cardBody {
+  height: 210px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: #f9f9f9;
+}
+a.cardTitle {
+  font-family: 'Lato', sans-serif;
+  color: #37474F;
+  font-weight: bold!important;
+}
+.cardTitle:hover {
+  text-decoration: none;
+  color: rgb(25, 41, 49);
+  font-weight: bold!important;
+}
+.cardDesc {
+  font-family: 'Lato', sans-serif;
+  color: #607D8C;
+  font-size: 14px;
+}
+.cardDate {
+  display: inline-table !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  margin-bottom: 15px !important;
+}
+.breadcrumb {
+  background: none !important;
+  padding-left: 0px !important;
+  font-size: 14px;
+  padding-bottom: 0px !important;
+}
+.breadcrumb > a {
+  color: #607D8C;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.breadcrumb > a:hover {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.headingArtikelById {
+  /* font-size: 35px; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.imageArtikelById {
+  margin-bottom: 30px;
+}
+.dateArtikelById {
+  padding: 0px !important;
+  line-height: 0em;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
 }

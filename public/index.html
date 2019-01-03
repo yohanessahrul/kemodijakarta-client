@@ -1,31 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0">
+    <meta name="theme-color" content="#000000">
+
     <!--
       manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+    
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
+      
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium|Quicksand|Rubik|Lato|Montserrat" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/semantic.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        /* background: red; */
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        /* background: yellow; */
+      }
+    </style>
+
+    <!-- SEO -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117358519-25"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-117358519-25');
+    </script>
+    <!-- SEO -->
+
+    <!-- Meta Tags -->
+    <title>Kemodijakarta.com | Jasa Perjalanan Medis Jakarta</title>
+    <meta name="description" content="Selamat datang di Layanan Perjalanan Medis Rumah sakit Jakarta. Kami (kemodijakarta) adalah sebuah layanan pendampingan bagi penderita kanker yang menjalani pengobatan di jakarta..." data-react-helmet="true" />
+    <meta name="keywords" content="perjalanan medis" data-react-helmet="true" />
+    <meta name="author" content="PT Vitamin Masyarakat Sehat" data-react-helmet="true" />
+    
+    <meta property="og:type" content="website" data-react-helmet="true" />
+    <meta property="og:url" content="http://www.kemodijakarta.com/" data-react-helmet="true" />
+    <meta property="og:title" content="Kemodijakarta.com | Jasa Perjalanan Medis Jakarta" data-react-helmet="true"  />
+    <meta property="og:description" content="Selamat datang di Layanan Perjalanan Medis Rumah sakit Jakarta. Kami (kemodijakarta) adalah sebuah layanan pendampingan bagi penderita kanker yang menjalani pengobatan di jakarta..." data-react-helmet="true" />
+    <meta property="og:image" content="http://kemodijakarta.com/images/kemo-image-share.jpeg" data-react-helmet="true"  />
+    <meta property="og:image:width" content="850"/>
+    <meta property="og:image:height" content="450"/>
+    <meta property="og:image:type" content="image/png" data-react-helmet="true"  />
+    <meta property="fb:app_id" content="">
+    <meta property="og:site_name" content="Kemodijakarta">
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -37,5 +92,34 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+    <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
+      function bilingual() {
+        if (localStorage.getItem('lang') === 'en') {
+          return 'Call Us'
+        } else {
+          return 'Hubungi Kami'
+        }
+      }
+      (function () {
+          var options = {
+              whatsapp: "+6281228856699", // WhatsApp number
+              sms: "+6281228856699", // Sms phone number
+              call_to_action: bilingual(), // Call to action
+              button_color: "#DE4341", // Color of button
+              position: "right", // Position may be 'right' or 'left'
+              order: "whatsapp,sms", // Order of buttons
+          };
+          var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    <!-- /WhatsHelp.io widget -->
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bebd0228c31748e"></script>
   </body>
 </html>
