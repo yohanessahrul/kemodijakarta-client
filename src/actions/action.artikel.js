@@ -107,7 +107,20 @@ export function addViewerAction (id) {
   return dispatch => {
     axios.get(`${baseIpServer}/api/article/addview/${id}`)
       .then((response) => {
-        console.log('Add viewer', response)
+        // console.log('Add viewer', response)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+}
+
+export function getArticleNewest (id) {
+  return dispatch => {
+    axios.get(`${baseIpServer}/api/article/newarticle/${id}`)
+      .then((response) => {
+        // console.log('3 BERITA TERBARU ==> ', response.data.data)
+        dispatch(getArticleNewestReducer(response.data.data))
       })
       .catch((err) => {
         console.log(err)
@@ -125,6 +138,13 @@ export function getAllArticlesReducer (payload) {
 export function getArticleByIdReducer (payload) {
   return {
     type: 'READ_ARTICLE_BY_ID',
+    payload: payload
+  }
+}
+
+export function getArticleNewestReducer (payload) {
+  return {
+    type: 'GET_ARTICLE_TERBARU',
     payload: payload
   }
 }
