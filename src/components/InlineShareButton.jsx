@@ -5,7 +5,6 @@ import {
 
 class InlineShareButton extends Component {
   componentDidMount () {
-    console.log('INLINE SHARE BUTTON LOG ==> ', this.props.dataShare);
   }
   render() {
     const { judul, isi, img } = this.props.dataShare;

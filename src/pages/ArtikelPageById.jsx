@@ -13,7 +13,8 @@ import { cleanDate } from '../helper/helper';
 import FixedButtonDaftarMobile from '../components/FixedButtonDaftarMobile';
 import Navigation from '../components/Navigation';
 import InlineShareButton from '../components/InlineShareButton';
-import InlineReactionButton from '../components/InlineReactionButton';
+import ArtikelTerpopuler from '../components/ArtikelTerpopuler';
+import ArtikelTerbaru from '../components/ArtikelTerbaru';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -31,6 +32,9 @@ class ArtikelPageById extends Component {
   }
 
   componentDidMount () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    
     let id = window.location.pathname.split('/')[2];
     let token = localStorage.getItem('token');
     this.props.addViewerAction(id);
@@ -84,17 +88,29 @@ class ArtikelPageById extends Component {
                 <h2 className="headingArtikelById">{this.state.currentArticle.judul}</h2>
                 <div className="dateArtikelById"><Icon style={{ paddingRight: '5px' }} size={12} icon={calendar} />{cleanDate(this.state.currentArticle.createdDate)} <Icon style={{ paddingLeft: '10px', paddingRight: '5px' }} size={12} icon={eye} />{this.state.currentArticle.view} views</div>
                 <InlineShareButton dataShare={this.state.currentArticle}/>
-                <img className="imageArtikelById" src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
-                {/* <div className="sharethis-inline-share-buttons" data-url="" data-title=""></div> */}
+                <img style={{ width: '100%' }} className="imageArtikelById" src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
                 <div dangerouslySetInnerHTML={{ __html: this.state.currentArticle.isi }}></div>
                 <br/>
                 <hr/>
-                <InlineReactionButton />
+                <br/>
+                <Row>
+                  <ArtikelTerbaru />
+                </Row>
               </Col>
               <Col md="4">
-                <div style={{ width: '100%', height: '900px', background: '#e2e2e2' }}>
-                  <h3>ADS</h3>
-                </div>
+                <Row>
+                  <Col md="12">
+                    <div style={{ width: '100%', height: '300px', background: '#bdd1d2' }}>
+                      <h3>ADS</h3>
+                    </div>
+                  </Col>
+                </Row>
+                <br/>
+                <Row>
+                  <Col md="12">
+                    <ArtikelTerpopuler/>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </Container>
