@@ -13,6 +13,7 @@ import { cleanDate } from '../helper/helper';
 import FixedButtonDaftarMobile from '../components/FixedButtonDaftarMobile';
 import Navigation from '../components/Navigation';
 import InlineShareButton from '../components/InlineShareButton';
+import InlineReactionButton from '../components/InlineReactionButton';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -86,6 +87,9 @@ class ArtikelPageById extends Component {
                 <img className="imageArtikelById" src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
                 {/* <div className="sharethis-inline-share-buttons" data-url="" data-title=""></div> */}
                 <div dangerouslySetInnerHTML={{ __html: this.state.currentArticle.isi }}></div>
+                <br/>
+                <hr/>
+                <InlineReactionButton />
               </Col>
               <Col md="4">
                 <div style={{ width: '100%', height: '900px', background: '#e2e2e2' }}>
