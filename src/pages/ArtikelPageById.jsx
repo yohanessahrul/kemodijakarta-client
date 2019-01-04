@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import {
-    Container,
-    Row,
-    Col,
-    Breadcrumb,
-    BreadcrumbItem,
-  } from 'reactstrap';
+  Container,
+  Row,
+  Col,
+  Breadcrumb,
+  BreadcrumbItem,
+} from 'reactstrap';
+import { Icon } from 'react-icons-kit';
+import { calendar, eye } from 'react-icons-kit/fa';
 import { cleanDate } from '../helper/helper';
 
 import FixedButtonDaftarMobile from '../components/FixedButtonDaftarMobile';
 import Navigation from '../components/Navigation';
+import InlineShareButton from '../components/InlineShareButton';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getArticleByIdAction } from '../actions/action.artikel';
+import { getArticleByIdAction, addViewerAction } from '../actions/action.artikel';
 
 import { Helmet } from 'react-helmet';
 
@@ -29,6 +32,7 @@ class ArtikelPageById extends Component {
   componentDidMount () {
     let id = window.location.pathname.split('/')[2];
     let token = localStorage.getItem('token');
+    this.props.addViewerAction(id);
     this.props.getArticleByIdAction(id, token);
   }
 
@@ -77,8 +81,10 @@ class ArtikelPageById extends Component {
                   <BreadcrumbItem active tag="span">{this.state.currentArticle.judul}</BreadcrumbItem>
                 </Breadcrumb>
                 <h2 className="headingArtikelById">{this.state.currentArticle.judul}</h2>
-                <p className="dateArtikelById">{cleanDate(this.state.currentArticle.createdDate)}</p>
+                <div className="dateArtikelById"><Icon style={{ paddingRight: '5px' }} size={12} icon={calendar} />{cleanDate(this.state.currentArticle.createdDate)} <Icon style={{ paddingLeft: '10px', paddingRight: '5px' }} size={12} icon={eye} />{this.state.currentArticle.view} views</div>
+                <InlineShareButton dataShare={this.state.currentArticle}/>
                 <img className="imageArtikelById" src={this.state.currentArticle.img} alt={this.state.currentArticle.img}/>
+                {/* <div className="sharethis-inline-share-buttons" data-url="" data-title=""></div> */}
                 <div dangerouslySetInnerHTML={{ __html: this.state.currentArticle.isi }}></div>
               </Col>
               <Col md="4">
@@ -103,7 +109,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  getArticleByIdAction
+  getArticleByIdAction, addViewerAction
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ArtikelPageById);

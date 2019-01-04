@@ -103,6 +103,18 @@ export function changeImageArticleAction (id, urlImage, token) {
   }
 }
 
+export function addViewerAction (id) {
+  return dispatch => {
+    axios.get(`${baseIpServer}/api/article/addview/${id}`)
+      .then((response) => {
+        console.log('Add viewer', response)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+}
+
 export function getAllArticlesReducer (payload) {
   return {
     type: 'GET_ALL_ARTICLE',
