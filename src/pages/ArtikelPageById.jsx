@@ -20,8 +20,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getArticleByIdAction, addViewerAction } from '../actions/action.artikel';
 
-import { Helmet } from 'react-helmet';
-
 class ArtikelPageById extends Component {
   constructor (props) {
     super (props)
@@ -31,7 +29,12 @@ class ArtikelPageById extends Component {
     }
   }
 
+  componentWillMount () {
+    console.log('will mount');
+  }
+
   componentDidMount () {
+    console.log('did mount');
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     
@@ -53,21 +56,6 @@ class ArtikelPageById extends Component {
     if (this.state.isLoading) {
       return (
         <div>
-          <Helmet>
-            <title>{`${this.state.currentArticle.judul}`}</title>
-            <meta name="description" content={`${this.state.currentArticle.isi.replace(/(<([^>]+)>)/ig,"").substring(0, 200)}`} data-react-helmet="true" />
-            <meta name="author" content="PT Vitamin Masyarakat Sehat" data-react-helmet="true" />
-
-            <meta property="og:type" content="article" />
-            <meta property="og:url" content={window.location.href} data-react-helmet="true" />
-            <meta property="og:title" content={this.state.currentArticle.judul} data-react-helmet="true" />
-            <meta property="og:description" content={this.state.currentArticle.isi.replace(/(<([^>]+)>)/ig,"").substring(0, 200)} data-react-helmet="true" />
-            <meta property="og:image" content="http://kemodijakarta.com/images/kemo-image-share.jpeg" data-react-helmet="true"  />
-            <meta property="og:image:secure_url" content={this.state.currentArticle.img} data-react-helmet="true" />
-            <meta property="og:image:width" content="850"/>
-            <meta property="og:image:height" content="450"/>
-            <meta property="og:image:type" content="image/png" data-react-helmet="true"  />
-          </Helmet>
           <div className="headerWrap">
             <Navigation lang={this.props.lang.menu}/>
           </div>
@@ -83,7 +71,7 @@ class ArtikelPageById extends Component {
                 <Breadcrumb className="breadcrumbArticle" tag="nav" listTag="div">
                   <BreadcrumbItem tag="a" href="/">Home</BreadcrumbItem>
                   <BreadcrumbItem tag="a" href="/artikel">Article</BreadcrumbItem>
-                  <BreadcrumbItem active tag="span">{this.state.currentArticle.judul}</BreadcrumbItem>
+                  <BreadcrumbItem active tag="span">Detail Artikel</BreadcrumbItem>
                 </Breadcrumb>
                 <h2 className="headingArtikelById">{this.state.currentArticle.judul}</h2>
                 <div className="dateArtikelById"><Icon style={{ paddingRight: '5px' }} size={12} icon={calendar} />{cleanDate(this.state.currentArticle.createdDate)} <Icon style={{ paddingLeft: '10px', paddingRight: '5px' }} size={12} icon={eye} />{this.state.currentArticle.view} views</div>
@@ -108,7 +96,7 @@ class ArtikelPageById extends Component {
                 <br/>
                 <Row>
                   <Col md="12">
-                    <ArtikelTerpopuler/>
+                    {/* <ArtikelTerpopuler/> */}
                   </Col>
                 </Row>
               </Col>
