@@ -1,3 +1,4 @@
+import history from '../history';
 import React, { Component } from 'react';
 import {
   Row,
@@ -35,9 +36,11 @@ class ArtikelTerbaru extends Component {
     })
   }
   
-  goToLink (id, judul) {
-    this.props.getArticleByIdAction(id);
-    this.props.getArticleNewest(id);
+  goToLink (link) {
+    // this.props.getArticleByIdAction(id);
+    // this.props.getArticleNewest(id);
+    history.push(link)
+    window.location.reload(true)
   }
 
   render() {
@@ -47,7 +50,7 @@ class ArtikelTerbaru extends Component {
         return (
           <Col md="4" key={datas._id}>
             <Card>
-              <Link to={`/artikel/${datas._id}/${judulConvertToUrlParameter(datas.judul)}`} onClick={() => thisInside.goToLink(datas._id, judulConvertToUrlParameter(datas.judul))}>
+              <Link to={`#`} onClick={() => thisInside.goToLink(`/artikel/${datas._id}/${judulConvertToUrlParameter(datas.judul)}`)}>
                 <CardImg src={datas.img} />
               </Link>
               <CardBody className="cardBodyArtikelTerkait">

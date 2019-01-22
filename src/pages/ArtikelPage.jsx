@@ -1,3 +1,4 @@
+import history from '../history';
 import React, { Component } from 'react';
 import {
   Container,
@@ -8,6 +9,7 @@ import {
   CardTitle,
   CardText,
   CardImg,
+  Button
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { judulConvertToUrlParameter } from '../helper/helper';
@@ -19,8 +21,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getAllArticlesAction } from '../actions/action.artikel';
 
-import { Helmet } from 'react-helmet';
-
 class ArtikelPage extends Component {
   constructor (props) {
     super (props)
@@ -28,6 +28,7 @@ class ArtikelPage extends Component {
       isLoading: false,
       dataArticles: null
     }
+    this.goToLink = this.goToLink.bind(this);
   }
 
   componentDidMount () {
@@ -43,6 +44,12 @@ class ArtikelPage extends Component {
     })
   }
 
+  goToLink (link) {
+    console.log('Goto Link => ', link)
+    history.push(link)
+    window.location.reload(true)
+  }
+
   render() {
     const { slideSection } = this.props.lang.home;
     const listArticle = () => {
@@ -51,11 +58,11 @@ class ArtikelPage extends Component {
           return (
             <Col md="4" style={{ marginBottom: '35px' }} key={data._id}>
               <Card>
-                <Link to={`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`}>                
+                <Link to={`#`} onClick={() => this.goToLink(`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`)}>                
                   <CardImg top width="100%" src={data.img} alt="Card image cap" />
                 </Link>
                 <CardBody className="cardBody">
-                  <Link className="cardTitle" to={`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`}>
+                  <Link className="cardTitle" to={`#`} onClick={() => this.goToLink(`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`)}>
                     <CardTitle>{data.judul.substring(0, 50)}</CardTitle>
                   </Link>
                   <CardText className="cardDesc">{data.isi.replace(/(<([^>]+)>)/ig,"").substring(0, 120)}..</CardText>
@@ -64,6 +71,7 @@ class ArtikelPage extends Component {
                   </CardText>
                 </CardBody>
               </Card>
+              <Button onClick={() => this.goToLink(`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`)}>Reload</Button>
             </Col>
           )
         })
@@ -72,17 +80,6 @@ class ArtikelPage extends Component {
     }
     return (
       <div>
-        <Helmet>
-          <title>Kemodijakarta.com | Artikel Jasa Perjalanan Medis Jakarta</title>
-          <meta name="description" content="Selamat datang di Layanan Perjalanan Medis Rumah sakit Jakarta. Kami (kemodijakarta) adalah sebuah layanan pendampingan bagi penderita kanker yang menjalani pengobatan di jakarta..." data-react-helmet="true" />
-          <meta name="keywords" content="perjalanan medis" data-react-helmet="true" />
-          <meta name="author" content="PT Vitamin Masyarakat Sehat" data-react-helmet="true" />
-
-          <meta property="og:url" content="http://kemodijakarta.com/" data-react-helmet="true" />
-          <meta property="og:image" content="http://kemodijakarta.com/images/kemo-image-share.jpeg" data-react-helmet="true" />
-          <meta property="og:title" content="Kemodijakarta.com | Artikel Jasa Perjalanan Medis Jakarta" data-react-helmet="true" />
-          <meta property="og:description" content="Selamat datang di Layanan Perjalanan Medis Rumah sakit Jakarta. Kami (kemodijakarta) adalah sebuah layanan pendampingan bagi penderita kanker yang menjalani pengobatan di jakarta..." data-react-helmet="true" />
-        </Helmet>
         <div className="headerWrap">
           <Navigation lang={this.props.lang.menu}/>
         </div>

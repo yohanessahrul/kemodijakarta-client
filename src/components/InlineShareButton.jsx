@@ -5,9 +5,11 @@ import {
 
 class InlineShareButton extends Component {
   componentDidMount () {
+    console.log('URL Saat ini ===> ', window.location.href)
+    console.log('payload => ', this.props.dataShare)
   }
   render() {
-    const { judul, isi, img } = this.props.dataShare;
+    const { judul, isi } = this.props.dataShare;
     return (
       <div>
         <InlineShareButtons
@@ -31,13 +33,13 @@ class InlineShareButton extends Component {
             size: 30,             // the size of each button (INTEGER)
  
             // OPTIONAL PARAMETERS
-            url: window.location.href, // (defaults to current url)
-            image: img,  // (defaults to og:image or twitter:image)
-            description: isi.replace(/(<([^>]+)>)/ig,"").substring(0, 200),       // (defaults to og:description or twitter:description)
-            title: judul,            // (defaults to og:title or twitter:title)
-            message: isi.replace(/(<([^>]+)>)/ig,""),     // (only for email sharing)
-            subject: judul,  // (only for email sharing)
-            username: '@congoranes' // (only for twitter sharing)
+            // url: '',               // (defaults to current url)
+            // image: '',             // (defaults to og:image or twitter:image)
+            // description: '',       // (defaults to og:description or twitter:description)
+            // title: '',             // (defaults to og:title or twitter:title)
+            // message: '',           // (only for email sharing)
+            subject: `[Kemodijakarta.com] - ${judul}`,           // (only for email sharing)
+            // username: ''           // (only for twitter sharing)
           }}
         />
         <br/>
