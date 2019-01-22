@@ -6,7 +6,7 @@ import {
   Card, CardImg, CardBody, CardTitle
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { judulConvertToUrlParameter } from '../helper/helper';
+import { judulConvertToUrlParameter, limitJudul } from '../helper/helper';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -37,8 +37,6 @@ class ArtikelTerbaru extends Component {
   }
   
   goToLink (link) {
-    // this.props.getArticleByIdAction(id);
-    // this.props.getArticleNewest(id);
     history.push(link)
     window.location.reload(true)
   }
@@ -54,7 +52,11 @@ class ArtikelTerbaru extends Component {
                 <CardImg src={datas.img} />
               </Link>
               <CardBody className="cardBodyArtikelTerkait">
-              <CardTitle className="cardTitleArtikelTerkait">{datas.judul}</CardTitle>
+              <CardTitle className="cardTitleArtikelTerkait">
+                <Link style={{ color: '#3d3d3d' }} to={`#`} onClick={() => thisInside.goToLink(`/artikel/${datas._id}/${judulConvertToUrlParameter(datas.judul)}`)}>
+                  { limitJudul(datas.judul) }
+                </Link>
+              </CardTitle>
               </CardBody>
             </Card>
           </Col>

@@ -75,3 +75,14 @@ export function cleanDate (date) {
 
   return `${convertDay(day)}, ${dt} ${convertMonth(month)} ${year} - ${hour}:${minute} WIB`
 }
+
+export function limitJudul (judul) {
+  let arrayss = judul.split(' ')
+  let result = [];
+  for (let i=0; i<arrayss.length; i++) {
+    if (i < 6) {
+      result.push(arrayss[i])
+    }
+  }
+  return result.join(' ');
+}
