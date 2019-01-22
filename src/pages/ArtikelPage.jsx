@@ -71,7 +71,6 @@ class ArtikelPage extends Component {
                   </CardText>
                 </CardBody>
               </Card>
-              <Button onClick={() => this.goToLink(`/artikel/${data._id}/${judulConvertToUrlParameter(data.judul)}`)}>Reload</Button>
             </Col>
           )
         })
