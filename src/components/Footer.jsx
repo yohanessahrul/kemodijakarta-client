@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import { Icon } from 'react-icons-kit';
-import {location} from 'react-icons-kit/icomoon';
-import {envelope, phone, facebook, twitter, youtubePlay} from 'react-icons-kit/fa';
+import { location } from 'react-icons-kit/icomoon';
+import { envelope, phone, facebook, twitter, youtubePlay } from 'react-icons-kit/fa';
 
 class Footer extends Component {
   render() {
@@ -17,9 +17,9 @@ class Footer extends Component {
                 <div style={{ padding: '0px 25%' }}>
                   <img style={{ display: 'table', width: '100%', border: '20px solid white', marginLeft: '-50px' }} src={'./images/kemo-image-share.jpeg'} alt="logo-footer" />
 
-<a href="http://www.hitwebcounter.com" target="_blank" rel="noopener noreferrer">
-<img src="http://hitwebcounter.com/counter/counter.php?page=7015718&style=0006&nbdigits=5&type=page&initCount=0" title="http://www.hitwebcounter.com/" alt="http://www.hitwebcounter.com/"   border="0" />
-</a>
+                  <a href="http://www.hitwebcounter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=7015718&style=0006&nbdigits=5&type=page&initCount=0" title="http://www.hitwebcounter.com/" alt="http://www.hitwebcounter.com/" border="0" />
+                  </a>
 
                 </div>
               </div>
@@ -29,16 +29,18 @@ class Footer extends Component {
                 <h5 style={{ color: 'white' }}>Kontak</h5>
                 <ul>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={location}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={location} />
                     <div className="footerAddress">
                       <p>
-                        Jl Caringin Barat 1 No 29A<br/>
-                        Jakarta Selatan, 12430<br/>
+                        Klinik Central Park Mall<br/>
+                        Jl. Letjen S. Parman, Tj. Duren Sel.,<br/>
+                        Grogol petamburan, <br/>
+                        Jakarta Barat, Jakarta 11470
                       </p>
                     </div>
                   </li>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={envelope}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={envelope} />
                     <div className="footerAddress">
                       <p>
                         info[at]kemodijakarta.com
@@ -46,7 +48,7 @@ class Footer extends Component {
                     </div>
                   </li>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={phone}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 5px 10px 0px', marginTop: '2px', color: '#4adebc' }} size={11} icon={phone} />
                     <div className="footerAddress">
                       <p>
                         0812-288-566-99
@@ -61,7 +63,7 @@ class Footer extends Component {
                 <h5 style={{ color: 'white' }}>Sosial Media</h5>
                 <ul>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }}  size={11} icon={facebook}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }} size={11} icon={facebook} />
                     <div className="footerAddress">
                       <p>
                         kemodijakartaFB
@@ -69,7 +71,7 @@ class Footer extends Component {
                     </div>
                   </li>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }}  size={11} icon={twitter}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }} size={11} icon={twitter} />
                     <div className="footerAddress">
                       <p>
                         kemodijakartaTwitter
@@ -77,7 +79,7 @@ class Footer extends Component {
                     </div>
                   </li>
                   <li style={{ listStyle: 'none', display: 'table' }}>
-                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }}  size={11} icon={youtubePlay}/>
+                    <Icon className="footerAddressIcon" style={{ float: 'left', padding: '0px 10px 10px 0px', color: '#4adebc' }} size={11} icon={youtubePlay} />
                     <div className="footerAddress">
                       <p>
                         kemodijakartaTube
