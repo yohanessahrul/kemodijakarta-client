@@ -41,12 +41,12 @@ class About extends Component {
                         <li>Ruben Kurniawan - <span>{tim.ruben}</span></li>
                         <li>Vincent Sutantiyo - <span>{tim.vincent}</span></li>
                         <li>Ricky Prasetyo - <span>{tim.ricky}</span></li>
-                        <li>Sigit - <span>{tim.sigit}</span></li>
                         <li>Perawat Lisa - <span>{tim.lisa}</span></li>
                         <li>Nisa - <span>{tim.nisa}</span></li>
                         <li>Ali Hozi - <span>{tim.ali}</span></li>
                         <li>Carolina Budiman - <span>{tim.carolina}</span></li>
                         <li>Jeffry Hermanto - <span>{tim.jefry}</span></li>
+                        <li>Yohanes Sahrul - <span>{tim.jefry}</span></li>
                       </ul>
                     </Col>
                   </Row>
