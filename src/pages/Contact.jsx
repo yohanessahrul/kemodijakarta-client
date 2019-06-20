@@ -49,7 +49,7 @@ class Contact extends Component {
                 <div className="clear"></div>
                 <div style={{ position: 'relative', display: 'table', background: 'rgb(245, 245, 245)', borderRadius: '20px', marginBottom: '20px', width: '100%', padding: '10px'}}>
                   <Icon icon={whatsapp} size="30" style={{ position: 'absolute', top: '10px', left: '15px', background: '#56C447', padding: '3px', color: 'white', float: 'left', borderRadius: '30px' }}/>
-                  <span style={{ color: '#6f6f6f', padding: '5px 8px 5px 50px', fontSize: '18px', float: 'left' }}>0812-288-566-99</span>
+                  <span style={{ color: '#6f6f6f', padding: '5px 8px 5px 50px', fontSize: '18px', float: 'left' }}>0817-0363-1403</span>
                 </div>
                 <div className="clear"></div>
               </div>
